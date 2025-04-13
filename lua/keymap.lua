@@ -31,7 +31,7 @@ keymap('v', '<leader>ff', function()
     builtin.find_files({ default_text = text })
 end, opts)
 
-keymap('v', '<leader>fg', function()
+keymap('v', '<leader>fs', function()
     local text = vim.getVisualSelection()
     builtin.live_grep({ default_text = text })
 end, opts)
@@ -41,6 +41,8 @@ keymap('n', '<leader>fs', require("telescope").extensions.live_grep_args.live_gr
 keymap('n', '<leader>pp', require("telescope").extensions.neoclip.neoclip, opts)
 
 keymap('n', '<leader>gh', '<cmd>AdvancedGitSearch<CR>', opts)
+keymap('n', '<leader>t', '<cmd>NvimTreeToggle<CR>', opts)
+keymap('n', '<leader>fo', '<cmd>LspZeroFormat<CR>', opts)
 
 keymap("v", "<C-j>", ":move '>+1<CR>gv=gv", opts)
 keymap("v", "<C-k>", ":move '<-2<CR>gv=gv", opts)

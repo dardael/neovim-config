@@ -3,7 +3,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use "sindrets/diffview.nvim"
     use "folke/tokyonight.nvim"
-    
+    use 'Mofiqul/vscode.nvim'
     use({
         "aaronhallaert/advanced-git-search.nvim",
         requires = {
